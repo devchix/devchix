@@ -1,19 +1,77 @@
-body {
-  background-color: $light-gray;
-  color: $medium-gray;
+.wrapper {
+  @include outer-container;
+  max-width: 45em;
 }
 
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+.hero {
+  background-image: image-url("hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $white;
+  height: 450px;
+  padding-top: $base-spacing * 5;
 
-  .container {
+  &__header,
+  &__subheader {
+    font-family: $base-font-family;
+    font-weight: 300;
     text-align: center;
-
-    h1 {
-      font-weight: 200;
-    }
   }
+
+  &__header {
+    margin-bottom: 0;
+  }
+
+  &__content-wrapper {
+    @include clearfix;
+    background: $white;
+    color: #1F1F42;
+    border: $base-border;
+    font-family: $secondary-font-family;
+    font-size: $font-medium;
+    letter-spacing: 2px;
+    margin-top: -($base-spacing * 3);
+    padding: 1em;
+  }
+
+  &__content {
+    padding: $base-spacing * 2;
+  }
+}
+
+.circle {
+  @include size(1em);
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+
+  &-pink {
+    background: $pink;
+  }
+
+  &-green {
+    background: $teal;
+  }
+
+  &-gray {
+    background: $light-gray;
+  }
+}
+
+.action-bar {
+  background: $teal;
+  color: white;
+  padding: $base-spacing;
+  margin-top: $base-spacing;
+
+  p {
+    border: 1px solid white;
+    clear: both;
+    padding: $small-spacing;
+    margin: 0 auto;
+    text-align: center;
+    width: 20em;
+  }
+
 }
