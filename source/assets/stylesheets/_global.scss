@@ -1,3 +1,6 @@
+body {
+}
+
 .wrapper {
   @include outer-container;
   max-width: 45em;
@@ -73,5 +76,62 @@
     text-align: center;
     width: 20em;
   }
+}
 
+.content-area {
+  font-family: $secondary-font-family;
+  padding-bottom: $base-spacing * 3;
+  padding-top: $base-spacing * 3;
+
+  h2 {
+    @include padding($small-spacing null);
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  &.mission,
+  &.join-us {
+    h2 {
+      color: $teal;
+    }
+  }
+
+  &.values {
+    background: $purple;
+    color: $light-pink;
+
+    .value-list {
+      @include span-columns(6);
+      padding-top: $small-spacing;
+    }
+  }
+}
+
+.affiliate-group {
+  @include size(10em);
+  background: $light-gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: $small-spacing;
+  margin-top: $base-spacing;
+}
+
+footer {
+  @include clearfix;
+  @include padding($small-spacing null);
+  background: $light-gray;
+
+  p, a {
+    color: $medium-gray;
+    margin-bottom: 0;
+    font-size: $font-small;
+  }
+
+  a {
+    float: right;
+  }
+
+  p {
+    float: left;
+  }
 }
