@@ -19,12 +19,12 @@
 
   &__header,
   &__subheader {
-    font-family: $base-font-family;
-    font-weight: 300;
     text-align: center;
   }
 
   &__header {
+    font-family: $heading-font-family;
+    font-weight: 100;
     margin-bottom: 0;
   }
 
@@ -86,11 +86,13 @@
   .cta-button {
     @include margin(0 $xsmall-spacing);
     border: 1px solid white;
+    font-family: $heading-font-family;
     clear: both;
     color: white;
     padding: $small-spacing;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
 
     @include media($medium-screen-up) {
       width: 13em;
@@ -176,6 +178,7 @@ footer {
 
   p, a {
     color: $medium-gray;
+    font-family: $heading-font-family;
     font-size: $font-small;
     margin-bottom: 0;
     padding-right: $base-spacing * 2;
