@@ -1,3 +1,5 @@
+$modular-scale-ratio: $major-third;
+
 // Typography
 $base-font-family: muli, san-serif;
 $heading-font-family: $base-font-family;
@@ -16,6 +18,8 @@ $heading-line-height: 1.2;
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
+$xsmall-spacing: $base-spacing / 4;
+
 $base-z-index: 0;
 
 // Colors
@@ -23,6 +27,7 @@ $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #e1e1e1;
+$lightest-gray: #eee;
 $pink: #ffbcce;
 $light-pink: #ffdbdf;
 $teal: #34d6b5;
@@ -31,7 +36,7 @@ $purple: #1f1f42;
 
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $purple;
 $action-color: $teal;
 
 // Border

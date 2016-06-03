@@ -4,8 +4,8 @@ title: DevChix
 
 %header
   .hero
-    %h1.hero__header DevChix
-    %h3.hero__subheader Connecting Women in Technology
+    %h2.hero__header DevChix
+    %p.hero__subheader Connecting Women in Technology
   .hero__content-wrapper.wrapper
     .circle.circle-pink
     .circle.circle-green
@@ -19,13 +19,27 @@ title: DevChix
         DevChix is a healthy and safe community where women can openly discuss
         topics around software development both publically and privately.
 
-      %a
-        Join us
 %section.action-bar
-  %p Join our mailing list
+  =link_to "https://github.com/devchix" do
+    .social
+      =image_tag "github.svg"
+  =link_to "https://twitter.com/devchix" do
+    .social
+      =image_tag "twitter.svg"
+
+  =link_to "https://groups.google.com/forum/#!forum/devchix", class: "cta-button" do
+    Join Us
+
+  =link_to "https://www.facebook.com/devchix" do
+    .social
+      =image_tag "facebook.svg"
+
+  =link_to "https://www.linkedin.com/groups/55155/profile" do
+    .social
+      =image_tag "linkedin.svg"
 
 %section.content-area.mission.wrapper
-  %h2 // Our Mission
+  %h4 // Our Mission
   %p
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -42,7 +56,7 @@ title: DevChix
 
 %section.content-area.values
   .wrapper
-    %h2 // Our Values
+    %h4 // Our Values
     %p
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -65,16 +79,21 @@ title: DevChix
       %li # We value understanding
 
 %section.content-area.join-us.wrapper
-  %h2 // Join Us
+  %h4 // Join Us
   %p
-    Join us, by <a href =""> joining our newletter</a> or join our affliated women in tech groups.
+    Join us, by <a href ="https://groups.google.com/forum/#!forum/devchix"> joining our newletter</a> or join our affliated women in tech groups.
 
-  %a.affiliate-group
-  %a.affiliate-group
-  %a.affiliate-group
-  %a.affiliate-group
+  .affiliate-wrapper
+    =link_to "http://codechix.org" do
+      .affiliate-group.codechix
+    =link_to "http://www.linuxchix.org/" do
+      .affiliate-group.linuxchix
+    =link_to "https://www.womenwhocode.com" do
+      .affiliate-group.women-who-code
+    =link_to "http://www.womenwhostartup.com" do
+      .affiliate-group.women-who-startup
 
 %footer
-  .wrapper
-    %p © 2016 DevChix
-    %a info@devchix.org
+  %p © 2016 DevChix
+  %a info@devchix.org
+  %a Made with ♥ by thoughtbot
