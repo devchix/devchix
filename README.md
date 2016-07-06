@@ -7,7 +7,7 @@ DevChix is a group of women from a variety of technical and experience backgroun
 
 Get the code
 ```
-$ git clone git@github.com:thoughtbot/devchix/devchix
+$ git clone git@github.com:devchix/devchix
 ```
 
 Install dependencies
