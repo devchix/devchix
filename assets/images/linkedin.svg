@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-4" transform="translate(-764.000000, -886.000000)" fill="#FFFFFF">
+            <path d="M776,886 C769.373,886 764,891.373 764,898 C764,904.627 769.373,910 776,910 C782.627,910 788,904.627 788,898 C788,891.373 782.627,886 776,886 L776,886 Z M774,902 L772,902 L772,896 L774,896 L774,902 L774,902 Z M773,895.109 C772.393,895.109 771.9,894.613 771.9,894 C771.9,893.388 772.392,892.891 773,892.891 C773.608,892.891 774.1,893.388 774.1,894 C774.1,894.613 773.607,895.109 773,895.109 L773,895.109 Z M781,902 L779.002,902 L779.002,899.139 C779.002,897.258 777,897.417 777,899.139 L777,902 L775,902 L775,896 L777,896 L777,897.093 C777.872,895.477 781,895.357 781,898.641 L781,902 L781,902 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
